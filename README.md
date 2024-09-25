@@ -51,28 +51,8 @@ Understanding the Repository
 |     +--.wmproject.properties
 |     +--theme.png
 |     +--fonts/
-|  +--mobile
-|     +--android
-|        +--style.less
-|        +--variable.less
-|        +--fonts/
-|     +--ios
-|        +--style.less
-|        +--variable.less
-|        +--fonts/
-|     +.wmproject.properties
-|     +theme.png
-|  +--bootswatch
-|     +--style.less
-|     +--variable.less
-|     +--bootswatch.less
-|     +--.wmproject.properties
-|     +--theme.png
-|     +--fonts/
 +--dist
 |  +--web.zip
-|  +--mobile.zip
-|  +--bootswatch.zip
 +--Gruntfile.js
 |
 +--package.json
