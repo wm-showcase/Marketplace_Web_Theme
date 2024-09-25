@@ -1,0 +1,66 @@
+//Landing Page styles
+.app-page {
+    .app-content{
+        &.landing{
+            .app-content-row{
+                .app-content-column{
+                    --wm-body-bg-color: var(--wm-header-bg-color);
+                    --wm-text-color: var(--wm-header-text-color);
+                    --wm-heading-text-color: var(--wm-header-text-color);
+                }
+            }
+            + .app-footer{
+                --wm-footer-bg: var(--wm-color-contrast-dark);
+                --wm-footer-text-color: var(--wm-color-contrast-light);
+                --wm-footer-spacing:1.5rem 3.75rem;
+                --footer-top-margin:0;
+                .app-nav.nav-pills li.app-nav-item a {
+                    color: var(--wm-header-text-color);
+                  }
+            }
+        }
+    }
+}
+
+.app-livelist, .app-list{
+    &.artifact-types {
+        background: none;
+        box-shadow: none;
+        .list-group {
+            columns: 3 360px;
+            height: 600px;
+            padding: 0;
+            column-gap: 28px;
+            overflow: visible;
+            .app-list-item {
+                padding: 0;
+                margin: 16px 0;
+                background: none;
+                &:hover, &:focus {
+                    transform: scale(1.05);
+                }
+                img{
+                    width: 100%;
+                    margin-bottom: 4px;
+                }
+                &.active{
+                    transform: scale(1.05);
+                    .app-label{
+                        color: var(--wm-heading-text-color);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    &.not-list{
+        .list-group {
+            padding: 0;
+            margin: 0 -3px;
+            li.app-list-item {
+                padding: 0;
+                margin: 3px;
+            }
+        }
+    }
+}
